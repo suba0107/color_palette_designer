@@ -5,9 +5,29 @@
 :root {
   --color: #000000;
 }
-.colorbox {
-  width: 100px;
-  height: 100px;
+
+#colorpicker {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+#color_picker {
+  margin-left: 10px;
+}
+.colorboxes {
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+}
+
+p {
+  text-align: center;
+}
+.displaybox {
+  width: 200px;
+  height: 200px;
   border: 1px solid;
   background-color: var(--color);
+  margin: 5px;
 }

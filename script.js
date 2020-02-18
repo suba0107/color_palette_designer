@@ -70,11 +70,11 @@ function convertToHSL(hex, r, g, b) {
 }
 
 function displayColor(hex) {
-  document.querySelector(".colorbox").style.setProperty("--color", hex);
+  document.querySelector("#colorbox3").style.setProperty("--color", hex);
 }
 
 function displayText(hex, r, g, b, h, s, l) {
-  document.querySelector("#hex").textContent = `Hex: ${hex}`;
-  document.querySelector("#rgb").textContent = `RGB: rgb(${255 * r}, ${255 * g}, ${255 * b})`;
-  document.querySelector("#hsl").textContent = `HSL: hsl(${h}, ${s}%, ${l}%)`;
+  document.querySelector("#colorbox3 #hex").textContent = `Hex: ${hex}`;
+  document.querySelector("#colorbox3 #rgb").textContent = `RGB: rgb(${255 * r}, ${255 * g}, ${255 * b})`;
+  document.querySelector("#colorbox3 #hsl").textContent = `HSL: hsl(${h}, ${s}%, ${l}%)`;
 }
